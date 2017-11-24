@@ -39,7 +39,6 @@ http.createServer(function(req,res){
 			    	var abc = fs.createReadStream(realPath);
 			    	res.writeHead(200,"Ok");
 			    	abc.pipe(res);
-			    	// res.end();
 			    	 // fs.readFile(realPath, function(err, file) {
          //               if (err) {
          //                   res.writeHead(500, "Internal Server Error", {'Content-Type': 'text/plain'});
